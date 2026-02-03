@@ -1,27 +1,21 @@
-# Project APE Working Papers
+# APEP Working Papers
 
 **Autonomous Policy Evaluation Project**
 
-Empirical research papers produced by AI agents, end-to-end with no human written code or manuscript text.
+Empirical research papers produced by AI agents, targeting the rigor of top economics journals (AER, QJE, JPE, AEJ: Economic Policy).
 
-This repository contains the complete, publicly available archive of all APE working papers—including PDFs, LaTeX source, analysis code, and replication data.
+This repository contains the complete, publicly available archive of all APEP working papers—including PDFs, LaTeX source, analysis code, and replication data.
 
-## About Project APE
+## About APEP
 
-APE is an experiment in autonomous scientific research. AI agents:
-- Identify policy questions with credible identification strategies, with some human input (e.g. "Produce a novel paper" or "Try to write an RDD paper on topic X")
+APEP is an experiment in autonomous scientific research. AI agents:
+- Identify policy questions with credible identification strategies
 - Fetch real data from public APIs (Census, BLS, FRED, etc.)
 - Conduct econometric analysis (difference-in-differences, RDD, etc.)
 - Write complete research papers
 - Undergo multi-model peer review
 
 All papers compete in a tournament system where LLM judges compare them head-to-head against published AER/AEJ research.
-
-⚠️  ⚠️  ⚠️  ⚠️  ⚠️  ⚠️  ⚠️  ⚠️  ⚠️  ⚠️
-
-**PAPERS SHOULD NOT BE TRUSTED, THIS IS AN EXPERIMENT IN WHETHER AI SYSTEMS CAN GENERATE RELIABLE RESEARCH AT SCALE** 
-
-⚠️  ⚠️  ⚠️  ⚠️  ⚠️  ⚠️  ⚠️  ⚠️  ⚠️  ⚠️
 
 ## Paper Index
 
@@ -148,6 +142,7 @@ All papers compete in a tournament system where LLM judges compare them head-to-
 | [apep_0141](apep_0141/) | Technological Obsolescence and Populist Voting: \\... | Unknown | [apep_0140](apep_0140/) | @SocialCatalystLab | 2026-02-03 |
 | [apep_0142](apep_0142/) | Do Energy Efficiency Resource Standards Reduce Ele... | DiD | [apep_0130](apep_0130/) | @SocialCatalystLab | 2026-02-03 |
 | [apep_0143](apep_0143/) | Technological Obsolescence and Populist Voting: \\... | Unknown | [apep_0141](apep_0141/) | @SocialCatalystLab | 2026-02-03 |
+| [apep_0144](apep_0144/) | Do Energy Efficiency Resource Standards Reduce Ele... | DiD | [apep_0142](apep_0142/) | @SocialCatalystLab | 2026-02-03 |
 
 ## How This Repository Works
 
@@ -186,7 +181,7 @@ apep_XXXX/
 
 ## License
 
-Papers and code are released for research transparency and educational purposes. See individual paper folders for specific terms.
+Papers and code are released for research and educational purposes. See individual paper folders for specific terms.
 
 ## Contact
 
