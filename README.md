@@ -1,0 +1,162 @@
+# APEP Working Papers
+
+Published papers from the Autonomous Policy Evaluation Project.
+
+## Paper Index
+
+| ID | Title | Method | Parent | Contributor | Date |
+|----|-------|--------|--------|-------------|------|
+| [apep_0001](apep_0001/) | Do State Paid Sick Leave Mandates Increase Work Hour... | DiD | — | @dakoyana | 2026-01-17 |
+| [apep_0002](apep_0002/) | The Labor Supply Effects of Texas's Nurse Mandatory ... | DiD | — | @dakoyana | Unknown |
+| [apep_0003](apep_0003/) | The Employment Effects of Ban-the-Box Preemption:\\ ... | DiD | — | @dakoyana | 2026-01-17 |
+| [apep_0004](apep_0004/) | Does State Caregiver Support Increase Labor Supply? ... | DiD | — | @dakoyana | Unknown |
+| [apep_0005](apep_0005/) | The Employment and Wage Effects of Arkansas's Minimu... | DiD | — | @dakoyana | 2026-01-17 |
+| [apep_0006](apep_0006/) | Universal License Recognition and Interstate Migrati... | DiD | — | @dakoyana | 2026-01-17 |
+| [apep_0007](apep_0007/) | Universal License Recognition and Interstate Worker ... | DiD | — | @dakoyana | 2026-01-17 |
+| [apep_0008](apep_0008/) | Universal Occupational License Recognition and Inter... | DiD | — | @dakoyana | 2026-01-17 |
+| [apep_0009](apep_0009/) | Does Colorado's Old Age Pension Reduce Labor Supply?... | RDD | — | @dakoyana | 2026-01-17 |
+| [apep_0010](apep_0010/) | Does SCSEP Eligibility Increase Employment Among Old... | DiD | — | @dakoyana | 2026-01-17 |
+| [apep_0011](apep_0011/) | Unintended Labor Market Consequences of Teen Driving... | DiD | — | @dakoyana | 2026-01-17 |
+| [apep_0012](apep_0012/) | Universal Occupational Licensing Recognition and Int... | DiD | — | @dakoyana | 2026-01-17 |
+| [apep_0013](apep_0013/) | Statewide Rent Control and Housing Cost Burden: \\ E... | Unknown | — | @anonymous | Unknown |
+| [apep_0014](apep_0014/) | Drug Decriminalization and Employment: Evidence from... | Unknown | — | @anonymous | Unknown |
+| [apep_0015](apep_0015/) | Does Free College for Foster Youth Increase Educatio... | RDD | — | @dakoyana | 2026-01-17 |
+| [apep_0016](apep_0016/) | Broadband Internet Expansion and Adolescent Time Use... | RDD | — | @dakoyana | 2026-01-17 |
+| [apep_0017](apep_0017/) | Does Broadband Subsidy Eligibility Increase Self-Emp... | RDD | — | @dakoyana | 2026-01-17 |
+| [apep_0018](apep_0018/) | The Long-Run Effects of Head Start: Replicating Ludw... | RDD | — | @anonymous | Unknown |
+| [apep_0019](apep_0019/) | The Effects of Income-Based Lifeline Eligibility on ... | RDD | — | @dakoyana | 2026-01-17 |
+| [apep_0020](apep_0020/) | Intergenerational Time Transfers and Social Security... | RDD | — | @dakoyana | 2026-01-17 |
+| [apep_0021](apep_0021/) | Pouring Cold Water on Deregulation Fears: \\ The Lab... | DiD | — | @dakoyana | 2026-01-17 |
+| [apep_0022](apep_0022/) | Does Social Security Eligibility Reduce Living Alone... | RDD | — | @dakoyana | 2026-01-17 |
+| [apep_0023](apep_0023/) | Does Bundling Workforce Services with Medicaid Expan... | DiD | — | @dakoyana | 2026-01-17 |
+| [apep_0024](apep_0024/) | The Health Insurance Cliff: \\ Evidence from Wiscons... | RDD | — | @dakoyana | 2026-01-18 |
+| [apep_0025](apep_0025/) | Early Retirement and the Reallocation of Time: \\ Ev... | RDD | — | @dakoyana | 2026-01-18 |
+| [apep_0026](apep_0026/) | Legal Weed, Self-Made? Does Recreational Marijuana A... | RDD | — | @dakoyana | 2026-01-18 |
+| [apep_0027](apep_0027/) | The Long Shadow of the Paddle?\\ Evidence from State... | DiD | — | @dakoyana | 2026-01-18 |
+| [apep_0028](apep_0028/) | The Montana Miracle Revisited: \\ Early Evidence on ... | DiD | — | @dakoyana | 2026-01-18 |
+| [apep_0029](apep_0029/) | The End of Aid: How Losing Mothers' Pension Eligibil... | RDD | — | @dakoyana | 2026-01-18 |
+| [apep_0030](apep_0030/) | Decriminalize, Then Recriminalize: \\ Evidence from ... | DiD | — | @dakoyana | 2026-01-18 |
+| [apep_0031](apep_0031/) | Portable Benefits and Job Mobility: Evidence from St... | DiD | — | @dakoyana | 2026-01-19 |
+| [apep_0032](apep_0032/) | Compulsory Schooling Laws and Mother's Labor Supply:... | DiD | — | @dakoyana | 2026-01-19 |
+| [apep_0033](apep_0033/) | Does Financial Literacy Education Improve Employment... | DiD | — | @dakoyana | 2026-01-19 |
+| [apep_0034](apep_0034/) | Breaking the Chains of Contract:\\ The Labor Market ... | DiD | — | @dakoyana | 2026-01-19 |
+| [apep_0035](apep_0035/) | The Ballot and the Paycheck:\'s Suffrage and Female ... | DiD | — | @dakoyana | 2026-01-19 |
+| [apep_0036](apep_0036/) | Does EITC Eligibility Affect Employment for Childles... | RDD | — | @dakoyana | 2026-01-19 |
+| [apep_0037](apep_0037/) | Medicare Eligibility and Labor Force Exit:\ Effects ... | RDD | — | @dakoyana | 2026-01-19 |
+| [apep_0038](apep_0038/) | Betting on Jobs? The Employment Effects of \\ Legal ... | DiD | — | @dakoyana | 2026-01-19 |
+| [apep_0039](apep_0039/) | Hot Standards, Cool Workers? The Effect of State Hea... | DiD | — | @dakoyana | 2026-01-19 |
+| [apep_0040](apep_0040/) | The Incorporation Premium: \\ Descriptive Evidence o... | Unknown | — | @dakoyana | 2026-01-20 |
+| [apep_0041](apep_0041/) | State Paid Family Leave and Maternal Employment: \\ ... | DiD | — | @dakoyana | 2026-01-20 |
+| [apep_0042](apep_0042/) | Do State Automatic IRA Mandates Affect Self-Reported... | DiD | — | @dakoyana | 2026-01-21 |
+| [apep_0043](apep_0043/) | Do State Insulin Price Caps Improve Diabetes Managem... | DiD | — | @dakoyana | 2026-01-21 |
+| [apep_0044](apep_0044/) | Clean Slate Laws and Aggregate Labor Market Outcomes... | DiD | — | @SocialCatalystLab | 2026-01-21 |
+| [apep_0045](apep_0045/) | Do State Auto-IRA Mandates Increase Retirement Savin... | DiD | — | @dakoyana | 2026-01-21 |
+| [apep_0046](apep_0046/) | State Earned Income Tax Credits and Self-Employment ... | Unknown | — | @anonymous | Unknown |
+| [apep_0047](apep_0047/) | Untitled | Unknown | — | @anonymous | Unknown |
+| [apep_0048](apep_0048/) | Untitled | Unknown | — | @anonymous | Unknown |
+| [apep_0049](apep_0049/) | Does Federal Transit Funding Improve Local Labor Mar... | RDD | — | @olafdrw | 2026-01-22 |
+| [apep_0050](apep_0050/) | Salary Transparency Laws and Wage Outcomes: Evidence... | DiD | — | @anonymous | Unknown |
+| [apep_0051](apep_0051/) | When Age Thresholds Fail: \\ A Cautionary Tale About... | RDD | — | @ceaesc | 2026-01-22 |
+| [apep_0052](apep_0052/) | Untitled | DiD | — | @dakoyana | 2026-01-22 |
+| [apep_0053](apep_0053/) | Automatic Voter Registration and Electoral Participa... | DiD | — | @SocialCatalystLab | 2026-01-22 |
+| [apep_0054](apep_0054/) | Shining Light on Paychecks: \\ The Effects of Salary... | DiD | — | @olafdrw | 2026-01-22 |
+| [apep_0055](apep_0055/) | Does Losing Parental Health Insurance at Age 26 Shif... | RDD | — | @anonymous | Unknown |
+| [apep_0056](apep_0056/) | Untitled | Unknown | — | @anonymous | Unknown |
+| [apep_0057](apep_0057/) | Untitled | Unknown | — | @anonymous | Unknown |
+| [apep_0058](apep_0058/) | Do Source of Income Discrimination Laws Increase Hou... | DiD | — | @anonymous | 2026-01-24 |
+| [apep_0059](apep_0059/) | Self-Employment and Health Insurance Coverage in the... | DR | — | @anonymous | Unknown |
+| [apep_0060](apep_0060/) | Untitled | Unknown | — | @anonymous | Unknown |
+| [apep_0061](apep_0061/) | Do State Dyslexia Laws Improve Reading Achievement? ... | DiD | — | @anonymous | 2026-01-25 |
+| [apep_0062](apep_0062/) | Betting on Jobs? The Employment Effects of Legal Spo... | DiD | — | @anonymous | 2026-01-26 |
+| [apep_0063](apep_0063/) | The Challenge of Evaluating State Heat Standards: A ... | DiD | — | @anonymous | 2026-01-26 |
+| [apep_0064](apep_0064/) | Betting on Jobs? The Employment Effects of Legal Spo... | DiD | — | @anonymous | 2026-01-26 |
+| [apep_0065](apep_0065/) | Time to Give Back? Social Security Eligibility at Ag... | Unknown | — | @olafdrw | 2026-01-26 |
+| [apep_0066](apep_0066/) | Does Paid Family Leave Promote Female Entrepreneursh... | DiD | — | @olafdrw | 2026-01-27 |
+| [apep_0067](apep_0067/) | Minimum Wage Increases and Teen Time Allocation:\ fr... | DiD | — | @anonymous | 2026-01-27 |
+| [apep_0068](apep_0068/) | Credit Markets, Social Networks, and America's Divid... | Unknown | — | @anonymous | 2026-01-27 |
+| [apep_0069](apep_0069/) | The Thermostatic Voter: Why Local Policy Success Fai... | RDD | — | @anonymous | 2026-01-28 |
+| [apep_0070](apep_0070/) | Childcare Mandates and Policy Feedback:\\ Spatial Ev... | RDD | — | @anonymous | 2026-01-28 |
+| [apep_0071](apep_0071/) | Does Local Climate Policy Build Demand for National ... | RDD | — | @anonymous | 2026-01-28 |
+| [apep_0072](apep_0072/) | Telehealth Parity Laws and Depression Diagnosis Prev... | DiD | — | @anonymous | 2026-01-28 |
+| [apep_0073](apep_0073/) | Do SNAP Work Requirements Increase Employment? \\ Ev... | DiD | — | @anonymous | 2026-01-28 |
+| [apep_0074](apep_0074/) | Do Extreme Risk Protection Order Laws Reduce Suicide... | DiD | — | @ai1scl | 2026-01-28 |
+| [apep_0075](apep_0075/) | Gray Wages: The Employment Effects of Minimum Wage I... | DiD | — | @ai1scl | 2026-01-28 |
+| [apep_0076](apep_0076/) | State Earned Income Tax Credit Generosity and Crime:... | DiD | — | @ai1scl | 2026-01-28 |
+| [apep_0077](apep_0077/) | State Earned Income Tax Credit Generosity and Crime:... | DiD | — | @“ai1scl” | 2026-01-28 |
+| [apep_0078](apep_0078/) | State Minimum Wage Increases and Business Establishm... | DiD | — | @“ai1scl” | 2026-01-28 |
+| [apep_0079](apep_0079/) | The Challenge of Evaluating Universal School Meals: ... | DiD | — | @“ai1scl” | 2026-01-29 |
+| [apep_0080](apep_0080/) | Click It or Ticket at the Border: A Spatial Regressi... | RDD | — | @anonymous | 2026-01-29 |
+| [apep_0081](apep_0081/) | Roads, Crashes, and Substances: A Geocoded Atlas of ... | RDD | — | @anonymous | 2026-01-29 |
+| [apep_0082](apep_0082/) | Recreational Marijuana Legalization and Business For... | DiD | — | @ai1scl | 2026-01-29 |
+| [apep_0083](apep_0083/) | Roads, Crashes, and Substances: A Geocoded Atlas of ... | DiD | — | @anonymous | 2026-01-29 |
+| [apep_0084](apep_0084/) | The Price of Distance: Cannabis Dispensary Access an... | DiD | — | @anonymous | 2026-01-29 |
+| [apep_0085](apep_0085/) | Must-Access Prescription Drug Monitoring Program Man... | DiD | — | @ai1scl | 2026-01-29 |
+| [apep_0086](apep_0086/) | Must-Access Prescription Drug Monitoring Program Man... | DiD | — | @ai1scl | 2026-01-29 |
+| [apep_0087](apep_0087/) | Automation Exposure and Older Worker Labor Force Non... | Unknown | — | @anonymous | 2026-01-30 |
+| [apep_0088](apep_0088/) | Testing the Substitution Hypothesis: Cannabis Dispen... | RDD | — | @anonymous | 2026-01-30 |
+| [apep_0089](apep_0089/) | How Full Practice Authority Affects Physician Office... | DiD | — | @anonymous | 2026-01-30 |
+| [apep_0090](apep_0090/) | Do Data Privacy Laws Stimulate Entrepreneurship? \\ ... | DiD | — | @olafdrw | 2026-01-30 |
+| [apep_0091](apep_0091/) | Testing the Substitution Hypothesis: Cannabis Dispen... | RDD | — | @anonymous | 2026-01-30 |
+| [apep_0092](apep_0092/) | Does Local Climate Policy Build Demand for National ... | RDD | — | @anonymous | 2026-01-30 |
+| [apep_0093](apep_0093/) | Legal Status vs.\ Physical Access: Testing the Canna... | RDD | — | @anonymous | 2026-01-30 |
+| [apep_0094](apep_0094/) | Betting on Jobs? The Employment Effects of \\ Legal ... | DiD | — | @anonymous | 2026-01-30 |
+| [apep_0117](apep_0117/) | Self-Employment as Bridge Employment: Did the ACA ... | Unknown | — | @anonymous | 2026-01-30 |
+| [apep_0118](apep_0118/) | Betting on Jobs? The Employment Effects of \\ Lega... | DiD | — | @anonymous | 2026-01-30 |
+| [apep_0119](apep_0119/) | Do Energy Efficiency Resource Standards Reduce Ele... | DiD | — | @ai1scl | 2026-01-30 |
+| [apep_0120](apep_0120/) | State Minimum Wage Increases and Young Adult House... | DiD | — | @ai1scl | 2026-01-30 |
+| [apep_0121](apep_0121/) | State Minimum Wage Increases and Young Adult House... | DiD | — | @ai1scl | 2026-01-30 |
+| [apep_0122](apep_0122/) | Do Renewable Portfolio Standards Create or Destroy... | DiD | — | @ai1scl | 2026-01-30 |
+| [apep_0123](apep_0123/) | Legal Status vs.\ Physical Access: Testing the Can... | RDD | — | @anonymous | 2026-01-31 |
+| [apep_0124](apep_0124/) | Do Close Referendum Losses Demobilize Voters? \\ E... | RDD | — | @anonymous | 2026-01-31 |
+| [apep_0125](apep_0125/) | Does Local Climate Policy Build Demand for Nationa... | RDD | — | @anonymous | 2026-02-01 |
+| [apep_0126](apep_0126/) | Do State Automatic IRA Mandates Affect Self-Report... | DiD | — | @anonymous | 2026-02-01 |
+| [apep_0127](apep_0127/) | Car Ownership, Housing Tenure, and Educational Ach... | RDD | — | @anonymous | 2026-02-01 |
+| [apep_0128](apep_0128/) | Environmental Regulation and Housing Markets: Evid... | RDD | — | @anonymous | 2026-02-01 |
+| [apep_0129](apep_0129/) | Does Federal Transit Funding Improve Local Labor M... | RDD | — | @anonymous | 2026-02-01 |
+| [apep_0130](apep_0130/) | Do Energy Efficiency Resource Standards Reduce Ele... | DiD | — | @SocialCatalystLab | 2026-02-01 |
+| [apep_0131](apep_0131/) | The TikTok Generation: \\ Short-Form Video and Stu... | Unknown | — | @SocialCatalystLab | 2026-02-01 |
+| [apep_0132](apep_0132/) | Does Local Climate Policy Build Demand for Nationa... | RDD | — | @SocialCatalystLab | 2026-02-01 |
+| [apep_0133](apep_0133/) | Does Local Climate Policy Build Demand for Nationa... | RDD | — | @SocialCatalystLab | 2026-02-02 |
+| [apep_0134](apep_0134/) | Do Supervised Drug Injection Sites Save Lives? \\ ... | DiD | — | @SocialCatalystLab | 2026-02-02 |
+| [apep_0135](apep_0135/) | Technological Obsolescence and Populist Voting: \\... | Unknown | — | @SocialCatalystLab | 2026-02-02 |
+| [apep_0136](apep_0136/) | Do Supervised Drug Injection Sites Save Lives? \\ ... | DiD | [apep_0134](apep_0134/) | @SocialCatalystLab | 2026-02-02 |
+| [apep_0137](apep_0137/) | Technological Obsolescence and Populist Voting: \\... | Unknown | [apep_0135](apep_0135/) | @SocialCatalystLab | 2026-02-02 |
+| [apep_0138](apep_0138/) | Technological Obsolescence and Populist Voting: \\... | Unknown | [apep_0137](apep_0137/) | @SocialCatalystLab | 2026-02-02 |
+| [apep_0139](apep_0139/) | Do Supervised Drug Injection Sites Save Lives? \\ ... | DiD | [apep_0136](apep_0136/) | @SocialCatalystLab | 2026-02-02 |
+| [apep_0140](apep_0140/) | Technological Obsolescence and Populist Voting: \\... | Unknown | [apep_0138](apep_0138/) | @SocialCatalystLab | 2026-02-03 |
+| [apep_0141](apep_0141/) | Technological Obsolescence and Populist Voting: \\... | Unknown | [apep_0140](apep_0140/) | @SocialCatalystLab | 2026-02-03 |
+| [apep_0142](apep_0142/) | Do Energy Efficiency Resource Standards Reduce Ele... | DiD | [apep_0130](apep_0130/) | @SocialCatalystLab | 2026-02-03 |
+| [apep_0143](apep_0143/) | Technological Obsolescence and Populist Voting: \\... | Unknown | [apep_0141](apep_0141/) | @SocialCatalystLab | 2026-02-03 |
+
+## How Papers Get Here
+
+1. Contributor runs `produce N papers`
+2. Agent writes initial_plan.md, commits before fetching data
+3. Paper passes two-stage review (internal self-review, then external validation)
+4. Paper is published to `papers/apep_NNNN/`
+
+## Quality Standards
+
+All papers in this folder have:
+- Research plan committed before data analysis (git timestamps prove sequence)
+- Passed internal review (3-5 rounds of self-improvement)
+- Passed external validation (GPT 5.2 + Gemini 3 Pro) if API keys available
+- Full replication package in `data/` or `code/`
+- Contributor attribution
+- Self-describing `metadata.json`
+
+## Folder Structure
+
+```
+papers/apep_0001/
+├── paper.pdf           # Final PDF
+├── paper.tex           # LaTeX source
+├── metadata.json       # Self-describing metadata
+├── initial_plan.md     # Original research plan (never modified)
+├── research_plan.md    # Final research plan (evolved version)
+├── code/               # Analysis scripts
+├── data/               # Replication data
+└── figures/            # Generated figures
+```
+
+Note: Older papers may have `pre_analysis.md` instead of `initial_plan.md` (legacy format).
