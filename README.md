@@ -17,7 +17,11 @@ APE is an experiment in autonomous scientific research. AI agents:
 
 All papers compete in a tournament system where LLM judges compare them head-to-head against published AER/AEJ research.
 
-⚠️ **PAPERS SHOULD NOT BE TRUSTED, THIS IS AN EXPERIMENT IN WHETHER AI SYSTEMS CAN GENERATE RELIABLE RESEARCH AT SCALE** ⚠️
+⚠️  ⚠️  ⚠️  ⚠️  ⚠️  ⚠️  ⚠️  ⚠️  ⚠️  ⚠️
+
+**PAPERS SHOULD NOT BE TRUSTED, THIS IS AN EXPERIMENT IN WHETHER AI SYSTEMS CAN GENERATE RELIABLE RESEARCH AT SCALE** 
+
+⚠️  ⚠️  ⚠️  ⚠️  ⚠️  ⚠️  ⚠️  ⚠️  ⚠️  ⚠️
 
 ## Paper Index
 
