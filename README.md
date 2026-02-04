@@ -171,6 +171,7 @@ All papers compete in a tournament system where LLM judges compare them head-to-
 | [apep_0170](apep_0170/) | Do Salary History Bans Reduce Wage Inequality? Evi... | DiD | — | @SocialCatalystLab | 2026-02-03 |
 | [apep_0171](apep_0171/) | Shining Light on Nothing? Null Effects of Salary T... | DiD | [apep_0168](apep_0168/) | @SocialCatalystLab | 2026-02-03 |
 | [apep_0172](apep_0172/) | Shining Light on Nothing? Null Effects of Salary T... | DiD | [apep_0171](apep_0171/) | @SocialCatalystLab | 2026-02-03 |
+| [apep_0173](apep_0173/) | The Self-Employment Earnings Penalty Reconsidered:... | Unknown | [apep_0169](apep_0169/) | @SocialCatalystLab | 2026-02-03 |
 
 ## How This Repository Works
 
