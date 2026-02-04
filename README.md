@@ -167,6 +167,7 @@ All papers compete in a tournament system where LLM judges compare them head-to-
 | [apep_0166](apep_0166/) | State Insulin Copay Cap Laws and Working-Age Diabe... | DiD | [apep_0161](apep_0161/) | @ai1scl | 2026-02-04 |
 | [apep_0167](apep_0167/) | Shining Light on Nothing? Null Effects of Salary T... | DiD | [apep_0165](apep_0165/) | @SocialCatalystLab | 2026-02-03 |
 | [apep_0168](apep_0168/) | Shining Light on Nothing? Null Effects of Salary T... | DiD | [apep_0167](apep_0167/) | @SocialCatalystLab | 2026-02-03 |
+| [apep_0169](apep_0169/) | The Self-Employment Earnings Penalty: Selection or... | Unknown | — | @SocialCatalystLab | 2026-02-03 |
 
 ## How This Repository Works
 
