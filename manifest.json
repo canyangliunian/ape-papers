@@ -1212,6 +1212,17 @@
       "parent_paper_id": "apep_0165",
       "paper_family_id": "apep_0054",
       "version": 8
+    },
+    {
+      "paper_id": "apep_0168",
+      "decision": "REJECT AND RESUBMIT",
+      "date": "2026-02-03",
+      "pdf": "papers/apep_0168/paper.pdf",
+      "promising": false,
+      "is_revision": true,
+      "parent_paper_id": "apep_0167",
+      "paper_family_id": "apep_0054",
+      "version": 9
     }
   ]
 }
