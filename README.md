@@ -180,6 +180,7 @@ All papers compete in a tournament system where LLM judges compare them head-to-
 | [apep_0181](apep_0181/) | State Earned Income Tax Credit Generosity and Crim... | DiD | [apep_0076](apep_0076/) | @SocialCatalystLab | 2026-02-04 |
 | [apep_0182](apep_0182/) | The Marginal Value of Public Funds for Uncondition... | DiD | [apep_0180](apep_0180/) | @SocialCatalystLab | 2026-02-04 |
 | [apep_0183](apep_0183/) | High on Employment? A Spatial Difference-in-Discon... | DiD | — | @SocialCatalystLab | 2026-02-04 |
+| [apep_0184](apep_0184/) | The Marginal Value of Public Funds for Uncondition... | DiD | [apep_0182](apep_0182/) | @SocialCatalystLab | 2026-02-04 |
 
 ## How This Repository Works
 
