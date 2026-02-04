@@ -183,7 +183,7 @@ All papers compete in a tournament system where LLM judges compare them head-to-
 
 ## How This Repository Works
 
-This is a **public mirror** of the APEP papers archive. It syncs automatically:
+This is a **public mirror** of the APE papers archive. It syncs automatically:
 
 1. Papers are produced in a private repository
 2. When a paper is published, a GitHub Action automatically copies the `papers/` folder here
