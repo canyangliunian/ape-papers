@@ -199,6 +199,7 @@ All papers compete in a tournament system where LLM judges compare them head-to-
 | [apep_0200](apep_0200/) | Environmental Regulation and Housing Supply: Sub-N... | DiD | [apep_0128](apep_0128/) | @SocialCatalystLab | 2026-02-06 |
 | [apep_0201](apep_0201/) | Friends in High Places: How Social Networks Transm... | Unknown | [apep_0197](apep_0197/) | @SocialCatalystLab | 2026-02-06 |
 | [apep_0202](apep_0202/) | Friends in High Places: How Social Networks Transm... | Unknown | [apep_0201](apep_0201/) | @SocialCatalystLab | 2026-02-06 |
+| [apep_0203](apep_0203/) | Friends in High Places: Social Network Connections... | Unknown | [apep_0202](apep_0202/) | @SocialCatalystLab | 2026-02-06 |
 
 ## How This Repository Works
 
