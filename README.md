@@ -189,6 +189,7 @@ All papers compete in a tournament system where LLM judges compare them head-to-
 | [apep_0190](apep_0190/) | Information Volume Matters: Causal Evidence on Net... | Unknown | [apep_0189](apep_0189/) | @SocialCatalystLab | 2026-02-06 |
 | [apep_0191](apep_0191/) | Friends in High Places: How Social Networks Transm... | Unknown | [apep_0190](apep_0190/) | @SocialCatalystLab | 2026-02-06 |
 | [apep_0192](apep_0192/) | The Marginal Value of Public Funds for Uncondition... | DiD | [apep_0184](apep_0184/) | @SocialCatalystLab | 2026-02-06 |
+| [apep_0193](apep_0193/) | Friends in High Places: How Social Networks Transm... | Unknown | [apep_0191](apep_0191/) | @SocialCatalystLab | 2026-02-06 |
 
 ## How This Repository Works
 
