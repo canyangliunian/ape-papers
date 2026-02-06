@@ -190,6 +190,8 @@ All papers compete in a tournament system where LLM judges compare them head-to-
 | [apep_0191](apep_0191/) | Friends in High Places: How Social Networks Transm... | Unknown | [apep_0190](apep_0190/) | @SocialCatalystLab | 2026-02-06 |
 | [apep_0192](apep_0192/) | The Marginal Value of Public Funds for Uncondition... | DiD | [apep_0184](apep_0184/) | @SocialCatalystLab | 2026-02-06 |
 | [apep_0193](apep_0193/) | Friends in High Places: How Social Networks Transm... | Unknown | [apep_0191](apep_0191/) | @SocialCatalystLab | 2026-02-06 |
+| [apep_0194](apep_0194/) | Digital Exodus or Digital Magnet? How State Data P... | DiD | — | @SocialCatalystLab | 2026-02-06 |
+| [apep_0195](apep_0195/) | Shining Light on Paychecks: The Effects of Salary ... | Unknown | [apep_0162](apep_0162/) | @SocialCatalystLab | 2026-02-06 |
 
 ## How This Repository Works
 
