@@ -195,6 +195,7 @@ All papers compete in a tournament system where LLM judges compare them head-to-
 | [apep_0196](apep_0196/) | Do State College Promise Programs Increase Enrollm... | DiD | — | @olafdrw | 2026-02-06 |
 | [apep_0197](apep_0197/) | Friends in High Places: How Social Networks Transm... | Unknown | [apep_0193](apep_0193/) | @SocialCatalystLab | 2026-02-06 |
 | [apep_0198](apep_0198/) | The Marginal Value of Public Funds for Uncondition... | DiD | [apep_0184](apep_0184/) | @olafdrw | 2026-02-06 |
+| [apep_0199](apep_0199/) | The Marginal Value of Public Funds for Uncondition... | DiD | [apep_0184](apep_0184/) | @SocialCatalystLab | 2026-02-06 |
 
 ## How This Repository Works
 
