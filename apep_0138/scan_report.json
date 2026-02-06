@@ -1,0 +1,138 @@
+{
+  "paper_id": "apep_0138",
+  "scan_date": "2026-02-06T12:49:57.916395+00:00",
+  "scan_version": "2.0.0",
+  "model": "openai/gpt-5.2",
+  "overall_verdict": "SUSPICIOUS",
+  "files_scanned": 6,
+  "flags": [
+    {
+      "category": "DATA_PROVENANCE_MISSING",
+      "severity": "HIGH",
+      "file": "01_clean_data.R",
+      "lines": [
+        28,
+        55,
+        86,
+        97,
+        108,
+        121,
+        133
+      ],
+      "evidence": "The manuscript describes concrete public/provided sources (Dropbox URL for modal_age.dta; MIT Election Lab; a DOI replication file; NBER/Census crosswalk), but the codebase contains no download/fetch script and instead assumes all inputs already exist in ../data/. This prevents reproducibility and makes it hard to verify that the exact datasets used match the cited sources/versions (especially election_2016/2020/2024 and the crosswalk). For integrity auditing, absence of a provenance-preserving data acquisition step (with hashes/versions) is a material concern.: tech_raw <- read_dta(\"../data/modal_age.dta\")\n...\ncrosswalk <- read_csv(\"../data/cbsa_county_crosswalk.csv\",\n                      show_col_types = FALSE)\n...\nelec_2008 <- read_csv(\"../data/election_2008.csv\",\n                      show_col_types = FALSE)\n...\nelec_2012 <- read_csv(\"../data/election_2012.csv\",\n                      show_col_types = FALSE)\n...\nelec_2016 <- read_csv(\"../data/election_2016.csv\",\n                      show_col_types = FALSE)\n...\nelec_2020 <- read_csv(\"../data/election_2020.csv\",\n                      show_col_types = FALSE)\n...\nelec_2024 <- read_csv(\"../data/election_2024.csv\",\n                      show_col_types = FALSE)",
+      "confidence": 0.9
+    },
+    {
+      "category": "METHODOLOGY_MISMATCH",
+      "severity": "MEDIUM",
+      "file": "05_tables.R",
+      "lines": [
+        41,
+        50,
+        60,
+        125,
+        130,
+        143,
+        152
+      ],
+      "evidence": "The manuscript\u2019s core identification narrative emphasizes 2012 as the pre-Trump baseline (Romney) and highlights gains 2012\u21922016 as the key diagnostic test. However, the table-generation script (i) produces a 'Summary Statistics' table restricted to 2016/2020/2024 (omitting 2012), and (ii) defines the 'Levels vs. Gains' table using 2016 as the 'level' column and only Trump-era gains (2016\u21922020, 2020\u21922024), omitting the pivotal 2012\u21922016 gains specification described in paper.tex. This is not fabrication, but it is a methodology/reporting mismatch between manuscript claims and automated table outputs and could lead to inconsistent or selectively framed results in the compiled paper.: cat(\" & 2016 & 2020 & 2024 \\\\\\\\n\")\n...\nm_2016 <- feols(... data = filter(df, year == 2016) ...)\nm_2020 <- feols(... data = filter(df, year == 2020) ...)\nm_2024 <- feols(... data = filter(df, year == 2024) ...)\n...\n# Table 6: Gains Analysis\n\ndf_controls <- df %>%\n  filter(year == 2016) %>%\n  select(cbsa, log_total_votes, is_metro)\n...\nm_level <- lm(trump_share_2016 ~ modal_age_mean_2016 + log_total_votes + is_metro, data = df_gains)\nm_gain1 <- lm(trump_gain_2016_2020 ~ modal_age_mean_2016 + log_total_votes + is_metro, data = df_gains)\nm_gain2 <- lm(trump_gain_2020_2024 ~ modal_age_mean_2020 + log_total_votes + is_metro, ...)",
+      "confidence": 0.85
+    },
+    {
+      "category": "SELECTIVE_REPORTING",
+      "severity": "MEDIUM",
+      "file": "05_tables.R",
+      "lines": [
+        33,
+        41,
+        50,
+        60
+      ],
+      "evidence": "Although the dataset and manuscript cover 2012, the script hard-codes the summary table header to only '2016, 2020, 2024'. This creates an appearance of selective reporting (dropping the pre-Trump year where the manuscript itself notes the tech effect is weakest/near-zero) in a headline descriptive table. Because the restriction is in the LaTeX-writing code, it will persist even if df contains 2012.: # By year\nsummary_by_year <- df %>%\n  group_by(year) %>%\n  summarize(\n    `Trump Vote Share (%)` = sprintf(\"%.1f (%.1f)\", mean(trump_share), sd(trump_share)),\n    `Modal Technology Age` = sprintf(\"%.1f (%.1f)\", mean(modal_age_mean), sd(modal_age_mean)),\n    `N (CBSAs)` = as.character(n_distinct(cbsa)),\n    .groups = \"drop\"\n  )\n\n# Write as LaTeX\nsink(\"../tables/tab1_summary.tex\")\n...\ncat(\" & 2016 & 2020 & 2024 \\\\\\\\n\")",
+      "confidence": 0.8
+    },
+    {
+      "category": "SUSPICIOUS_TRANSFORMS",
+      "severity": "LOW",
+      "file": "01_clean_data.R",
+      "lines": [
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        69
+      ],
+      "evidence": "Converting FIPS codes to numeric can silently drop leading zeros (e.g., '01001' becomes 1001). The code consistently converts both crosswalk and election county_fips to numeric, so joins may still work, but this is fragile and can create mismatches if any file uses character FIPS with leading zeros or if numeric parsing introduces scientific notation/rounding in other contexts. This is more of a robustness/reproducibility risk than a biasing transform.: mutate(\n    county_fips = paste0(\n      str_pad(fipsstatecode, 2, pad = \"0\"),\n      str_pad(fipscountycode, 3, pad = \"0\")\n    ) %>% as.numeric(),\n    cbsa = as.numeric(cbsacode)\n  )",
+      "confidence": 0.7
+    },
+    {
+      "category": "HARD_CODED_RESULTS",
+      "severity": "LOW",
+      "file": "05_tables.R",
+      "lines": [
+        41,
+        45,
+        48,
+        51,
+        54,
+        57
+      ],
+      "evidence": "This is not hard-coding coefficients/SEs, but the table layout is hard-coded to specific years and positional indexing ([1],[2],[3]) rather than matching by year value. If the grouped data are not sorted as expected (or if 2012 is present and changes ordering), the table could mislabel year columns or omit years without explicit filtering, potentially leading to incorrect reported descriptives.: cat(\" & 2016 & 2020 & 2024 \\\\\\\\n\")\n...\ncat(sprintf(\"Trump Vote Share (\\\\%%) & %s & %s & %s \\\\\\\\n\",\n            summary_by_year$`Trump Vote Share (%)`[1],\n            summary_by_year$`Trump Vote Share (%)`[2],\n            summary_by_year$`Trump Vote Share (%)`[3]))",
+      "confidence": 0.75
+    }
+  ],
+  "file_verdicts": [
+    {
+      "file": "00_packages.R",
+      "verdict": "CLEAN"
+    },
+    {
+      "file": "01_clean_data.R",
+      "verdict": "SUSPICIOUS"
+    },
+    {
+      "file": "02_main_analysis.R",
+      "verdict": "CLEAN"
+    },
+    {
+      "file": "03_robustness.R",
+      "verdict": "CLEAN"
+    },
+    {
+      "file": "05_tables.R",
+      "verdict": "CLEAN"
+    },
+    {
+      "file": "04_figures.R",
+      "verdict": "CLEAN"
+    }
+  ],
+  "summary": {
+    "verdict": "SUSPICIOUS",
+    "counts": {
+      "CRITICAL": 0,
+      "HIGH": 1,
+      "MEDIUM": 2,
+      "LOW": 2
+    },
+    "one_liner": "unclear provenance",
+    "executive_summary": "The repository\u2019s cleaning script (`01_clean_data.R`) assumes several external datasets are already present, despite the manuscript specifying concrete public/provided sources (a Dropbox `modal_age.dta`, MIT Election Lab files, a DOI-hosted replication archive, and an NBER/Census crosswalk). There is no code to download, fetch, or verify these inputs, making the data provenance and exact versions used unreproducible and preventing readers from reliably recreating the analysis from the repository alone.",
+    "top_issues": [
+      {
+        "category": "DATA_PROVENANCE_MISSING",
+        "severity": "HIGH",
+        "short": "The manuscript describes concrete public/provided sources...",
+        "file": "01_clean_data.R",
+        "lines": [
+          28,
+          55
+        ],
+        "github_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/apep_0138/code/01_clean_data.R#L28-L133"
+      }
+    ],
+    "full_report_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/tournament/corpus_scanner/scans/apep_0138_scan.json"
+  },
+  "error": null
+}

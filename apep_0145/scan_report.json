@@ -1,0 +1,159 @@
+{
+  "paper_id": "apep_0145",
+  "scan_date": "2026-02-06T12:51:39.151928+00:00",
+  "scan_version": "2.0.0",
+  "model": "openai/gpt-5.2",
+  "overall_verdict": "SUSPICIOUS",
+  "files_scanned": 11,
+  "flags": [
+    {
+      "category": "HARD_CODED_RESULTS",
+      "severity": "LOW",
+      "file": "01_fetch_data.R",
+      "lines": [
+        27,
+        96
+      ],
+      "evidence": "EERS adoption years are hard-coded via an embedded tribble when the documented raw CSV is missing. While the manuscript describes treatment coding based on ACEEE/DSIRE/NCSL and the repo includes a provenance-validation script, the existence of a silent fallback to embedded values means results could be produced without the raw source file present (reducing auditability).: eers_raw_file <- paste0(data_dir, \"raw/eers_adoption_sources.csv\")\nif (file.exists(eers_raw_file)) {\n  eers_treatment <- read_csv(eers_raw_file, show_col_types = FALSE) %>%\n    select(state_abbr, state_name, eers_year, eers_type)\n  cat(\"Loaded EERS treatment data from:\", eers_raw_file, \"\\n\")\n} else {\n  # Fallback for backward compatibility (documented in DATA_SOURCES.md)\n  cat(\"WARNING: Raw CSV not found, using embedded data\\n\")\n  eers_treatment <- tribble(\n    ~state_abbr, ~state_name,           ~eers_year, ~eers_type,\n    \"AZ\",        \"Arizona\",              2010,       \"mandatory\",\n    ...\n    \"WI\",        \"Wisconsin\",           2005,       \"mandatory\"\n  )\n}",
+      "confidence": 0.78
+    },
+    {
+      "category": "HARD_CODED_RESULTS",
+      "severity": "LOW",
+      "file": "01c_fetch_policy.R",
+      "lines": [
+        22,
+        175
+      ],
+      "evidence": "Policy-control adoption years (RPS, decoupling, building codes) are hard-coded in-script. This is potentially fine because the script documents raw source CSVs and a dedicated validator (01d_validate_provenance.R) checks these values. Still, hard-coding key controls increases the risk of transcription errors if the validation script is not run or raw files are absent.: rps_data <- tribble(\n  ~state_abbr, ~rps_year,\n  \"AZ\", 2001,\n  ...\n)\n...\ndecoupling_data <- tribble(\n  ~state_abbr, ~decoupling_year,\n  \"CA\", 1982,\n  ...\n)\n...\nbuilding_code_data <- tribble(\n  ~state_abbr, ~building_code_year,\n  \"CA\", 2010,\n  ...\n)",
+      "confidence": 0.73
+    },
+    {
+      "category": "DATA_PROVENANCE_MISSING",
+      "severity": "MEDIUM",
+      "file": "01_fetch_data.R",
+      "lines": [
+        27,
+        96
+      ],
+      "evidence": "The code allows running treatment coding without the documented raw source file (data/raw/eers_adoption_sources.csv). If a replication package is incomplete or a user runs code from a different working directory, treatment assignment may come from embedded values rather than the stated provenance, and the embedded values themselves are not cryptographically tied to the cited sources.: if (file.exists(eers_raw_file)) {\n  eers_treatment <- read_csv(eers_raw_file, show_col_types = FALSE) %>%\n    select(state_abbr, state_name, eers_year, eers_type)\n} else {\n  cat(\"WARNING: Raw CSV not found, using embedded data\\n\")\n  eers_treatment <- tribble(...)\n}",
+      "confidence": 0.74
+    },
+    {
+      "category": "METHODOLOGY_MISMATCH",
+      "severity": "HIGH",
+      "file": "04b_sdid_robustness.R",
+      "lines": [
+        150,
+        238
+      ],
+      "evidence": "The manuscript claims implementing Synthetic DiD (Arkhangelsky et al., 2021). However, this script implements a nonstandard, ad hoc SDID variant: (i) unit weights are proportional to correlations with treated pre-trends (not the SDID optimization problem), (ii) time weights are imposed via an exponential-decay heuristic (not SDID's estimated time weights), and (iii) no regularization/constraints used by SDID are enforced. This can materially change the estimate and its interpretation; presenting it as SDID in the paper would be misleading unless explicitly labeled as a simplified/approximate alternative.: # Step 1: Compute unit weights (synthetic control approach)\n# Minimize pre-treatment fit between treated average and weighted controls\n...\n# Simple correlation-based weights for controls\n# (More sophisticated: quadratic programming as in synthdid package)\ncorrelations <- apply(Y_pre_control, 1, function(row) {\n  cor(row, Y_pre_treated_avg)\n})\ncorrelations[correlations < 0] <- 0\nomega <- correlations / sum(correlations)\n...\n# Step 2: Compute time weights\n# Weight pre-treatment periods by inverse distance to treatment\ntime_weights <- exp(-(T0 - 1:T0) / 3)  # Exponential decay\nlambda <- time_weights / sum(time_weights)\n...\nsdid_estimate <- (post_treated - post_control) - pre_gap",
+      "confidence": 0.9
+    },
+    {
+      "category": "METHODOLOGY_MISMATCH",
+      "severity": "MEDIUM",
+      "file": "04_robustness.R",
+      "lines": [
+        240,
+        430
+      ],
+      "evidence": "The manuscript discusses Rambachan-Roth 'Honest DiD' sensitivity analysis. This file contains (a) an attempt to call honest_did() (good), but also (b) fallback and reporting code that computes 'honest' intervals using a simple additive drift rule (\u00b1 M\u00b7e) rather than the HonestDiD procedure (which relies on a covariance structure and an optimization/LP step). If these approximated intervals are used in tables/figures described as HonestDiD, that would be a methodology mismatch. At minimum, outputs from this approximate section should be clearly labeled as a heuristic approximation and kept separate from actual HonestDiD results.: # Conservative CIs with trend violation allowance\n# Under smoothness: CI widens by approximately M * (post-treatment periods)\n# This is a simplified approximation; full HonestDiD uses LP\n\n# M = 0.02 (modest violation: 2% drift per period)\ndrift_m02 <- 0.02 * e  # Cumulative drift over e periods\nci_m02 <- c(est - 1.96 * se - drift_m02, est + 1.96 * se + drift_m02)",
+      "confidence": 0.85
+    },
+    {
+      "category": "SUSPICIOUS_TRANSFORMS",
+      "severity": "LOW",
+      "file": "04b_sdid_robustness.R",
+      "lines": [
+        86,
+        121
+      ],
+      "evidence": "For the SDID robustness check, the script enforces balance by dropping any state with missing outcome years, and further restricts to 1995\u20132015. This can change the composition of treated/control groups and potentially select on observability correlated with outcomes. Because it is framed as a robustness exercise and not the main estimate, this is not inherently problematic, but it should be clearly reported as a different sample with possible selection.: sdid_balanced <- sdid_sample %>%\n  filter(year >= 1995 & year <= 2015) %>%\n  select(state_abbr, year, log_res_elec_pc, sdid_treated) %>%\n  filter(!is.na(log_res_elec_pc))\n...\nif (min(balance_check$n_years) < max(balance_check$n_years)) {\n  cat(\"Warning: Unbalanced panel. Restricting to complete cases.\\n\")\n  complete_states <- balance_check %>%\n    filter(n_years == max(n_years)) %>%\n    pull(state_abbr)\n  sdid_balanced <- sdid_balanced %>%\n    filter(state_abbr %in% complete_states)\n}",
+      "confidence": 0.77
+    },
+    {
+      "category": "SELECTIVE_REPORTING",
+      "severity": "LOW",
+      "file": "04_robustness.R",
+      "lines": [
+        1,
+        25
+      ],
+      "evidence": "The manuscript states an industrial electricity placebo test as part of identification discussion, but the robustness script explicitly removes the industrial placebo 'per user request'. If the paper still claims/relies on this placebo while the code omits it, that would be selective reporting/mismatch. (If the revised manuscript version also removed the placebo claim, then this is not an issue.): # REVISION NOTES (apep_0145):\n#   - REMOVED: Industrial electricity placebo (user request)\n#   - ADDED: Full Honest DiD (Rambachan-Roth) sensitivity analysis",
+      "confidence": 0.62
+    }
+  ],
+  "file_verdicts": [
+    {
+      "file": "01b_fetch_weather.R",
+      "verdict": "CLEAN"
+    },
+    {
+      "file": "04b_sdid_robustness.R",
+      "verdict": "SUSPICIOUS"
+    },
+    {
+      "file": "01c_fetch_policy.R",
+      "verdict": "CLEAN"
+    },
+    {
+      "file": "01_fetch_data.R",
+      "verdict": "CLEAN"
+    },
+    {
+      "file": "06_tables.R",
+      "verdict": "CLEAN"
+    },
+    {
+      "file": "00_packages.R",
+      "verdict": "CLEAN"
+    },
+    {
+      "file": "01d_validate_provenance.R",
+      "verdict": "CLEAN"
+    },
+    {
+      "file": "04_robustness.R",
+      "verdict": "CLEAN"
+    },
+    {
+      "file": "02_clean_data.R",
+      "verdict": "CLEAN"
+    },
+    {
+      "file": "03_main_analysis.R",
+      "verdict": "CLEAN"
+    },
+    {
+      "file": "05_figures.R",
+      "verdict": "CLEAN"
+    }
+  ],
+  "summary": {
+    "verdict": "SUSPICIOUS",
+    "counts": {
+      "CRITICAL": 0,
+      "HIGH": 1,
+      "MEDIUM": 2,
+      "LOW": 4
+    },
+    "one_liner": "method mismatch",
+    "executive_summary": "The robustness script labeled as implementing Synthetic Difference-in-Differences (Arkhangelsky et al., 2021) instead uses a nonstandard, ad hoc variant that departs from the published SDID estimator. In particular, it constructs unit weights proportional to correlations with the treated unit (rather than solving the SDID optimization for weights), making the reported \u201cSDID\u201d results methodologically mismatched and not directly comparable to the estimator described in the manuscript.",
+    "top_issues": [
+      {
+        "category": "METHODOLOGY_MISMATCH",
+        "severity": "HIGH",
+        "short": "The manuscript claims implementing Synthetic DiD (Arkhang...",
+        "file": "04b_sdid_robustness.R",
+        "lines": [
+          150,
+          238
+        ],
+        "github_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/apep_0145/code/04b_sdid_robustness.R#L150-L238"
+      }
+    ],
+    "full_report_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/tournament/corpus_scanner/scans/apep_0145_scan.json"
+  },
+  "error": null
+}

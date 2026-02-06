@@ -1,0 +1,101 @@
+{
+  "paper_id": "apep_0153",
+  "scan_date": "2026-02-06T12:52:56.883703+00:00",
+  "scan_version": "2.0.0",
+  "model": "openai/gpt-5.2",
+  "overall_verdict": "CLEAN",
+  "files_scanned": 7,
+  "flags": [
+    {
+      "category": "SELECTIVE_REPORTING",
+      "severity": "MEDIUM",
+      "file": "06_tables.R",
+      "lines": [
+        98,
+        176,
+        207
+      ],
+      "evidence": "Several key outputs (Post-PHE Panel D in Table 2; WCB p-values in Table 3; plus other robustness entries) are only included if robustness_results.rds exists and contains the relevant objects. If robustness computation fails or the RDS is missing, the tables silently omit these results (replacing with '---' or dropping the panel entirely), which can enable selective presentation if failures correlate with unfavorable estimates or diagnostics. The manuscript emphasizes these analyses (post-PHE, WCB), so omission should probably be a hard error (stop()) rather than silent fallback.: # Panel D: Post-PHE Only\nif (!is.null(robustness) && !is.null(robustness$post_phe)) {\n  tab2_tex <- paste0(tab2_tex,\n    \"\\\\multicolumn{6}{l}{\\\\textit{Panel D: Post-PHE Only (2017--2019 + 2023--2024)}} \\\\\\\\\\n\",\n    sprintf(\"ATT & %.4f & \", robustness$post_phe$overall.att)\n  )\n  ...\n}\n...\n# Add WCB p-value for TWFE\nif (!is.null(robustness) && !is.null(robustness$wcb$twfe)) {\n  tab3_tex <- paste0(tab3_tex, sprintf(\"%.3f\", robustness$wcb$twfe$p_val))\n} else {\n  tab3_tex <- paste0(tab3_tex, \"---\")\n}",
+      "confidence": 0.78
+    },
+    {
+      "category": "HARD_CODED_RESULTS",
+      "severity": "LOW",
+      "file": "01_fetch_data.R",
+      "lines": [
+        79,
+        89,
+        95,
+        140
+      ],
+      "evidence": "Policy adoption timing is manually encoded. This is not inherently suspicious (and is described in the manuscript as compiled from CMS/KFF/state sources), but it is a single point of failure: any miscoding (especially for states with partial/phase-in extensions like GA/MO, as noted in comments) directly affects treatment assignment and all estimates. For auditability, consider adding (i) a machine-readable provenance file with URLs/citations per state, (ii) effective dates (YYYY-MM-DD) rather than only adopt_year, and (iii) unit tests that compare against an external reference table.: treatment_dates <- tribble(\n  ~state_fips, ~state_abbr, ~adopt_year, ~mechanism,\n  # Pre-ARPA waiver states (2021)\n  17, \"IL\", 2021, \"Waiver\",\n  13, \"GA\", 2021, \"Waiver\",  # Initially 6 months, 12 months Nov 2022\n  29, \"MO\", 2021, \"Waiver\",  # Limited initially, full SPA July 2023\n  ...\n  32, \"NV\", 2024, \"SPA\",\n  # 2025 wave (not yet treated in sample)\n  16, \"ID\", 2025, \"SPA\",\n  19, \"IA\", 2025, \"SPA\"\n)\n\nnever_treated <- c(5, 55)  # AR=5, WI=55",
+      "confidence": 0.7
+    },
+    {
+      "category": "DATA_PROVENANCE_MISSING",
+      "severity": "LOW",
+      "file": "00_packages.R",
+      "lines": [
+        18,
+        23
+      ],
+      "evidence": "The code installs a CRAN package at runtime. This is not data fabrication, but it weakens computational provenance/reproducibility because results can vary across package versions over time. For academic integrity and reproducibility, a lockfile (renv) or explicit package version recording is preferred.: if (!requireNamespace(\"HonestDiD\", quietly = TRUE)) {\n  install.packages(\"HonestDiD\", repos = \"https://cloud.r-project.org\")\n}\nlibrary(HonestDiD)",
+      "confidence": 0.66
+    },
+    {
+      "category": "SUSPICIOUS_TRANSFORMS",
+      "severity": "LOW",
+      "file": "02_clean_data.R",
+      "lines": [
+        78,
+        101
+      ],
+      "evidence": "Treatment is defined at the year level (treated if survey year >= adopt_year), not by effective date/month; and treatment timing is truncated to the maximum year present in the loaded data (max_sample_year). The manuscript explicitly frames estimates as ITT due to ACS lacking interview/birth month, so this is largely justified. Still, this transform can create non-trivial misclassification for mid-year adoptions (and 2023 is explicitly 'mixed' post-PHE). Because the paper uses a July 1 cutoff rule in the text, consider encoding that cutoff directly (using actual effective dates) to ensure code matches the stated mapping rule.: mutate(\n  max_sample_year = max(year),\n  treated = as.integer(!is.na(adopt_year) & adopt_year <= max_sample_year & year >= adopt_year),\n  first_treat = ifelse(is.na(adopt_year) | adopt_year > max_sample_year, 0, adopt_year),\n  phe_period = as.integer(year >= 2020 & year <= 2022),\n  post_phe = as.integer(year >= 2023)\n)",
+      "confidence": 0.72
+    }
+  ],
+  "file_verdicts": [
+    {
+      "file": "01_fetch_data.R",
+      "verdict": "CLEAN"
+    },
+    {
+      "file": "06_tables.R",
+      "verdict": "CLEAN"
+    },
+    {
+      "file": "00_packages.R",
+      "verdict": "CLEAN"
+    },
+    {
+      "file": "04_robustness.R",
+      "verdict": "CLEAN"
+    },
+    {
+      "file": "02_clean_data.R",
+      "verdict": "CLEAN"
+    },
+    {
+      "file": "03_main_analysis.R",
+      "verdict": "CLEAN"
+    },
+    {
+      "file": "05_figures.R",
+      "verdict": "CLEAN"
+    }
+  ],
+  "summary": {
+    "verdict": "CLEAN",
+    "counts": {
+      "CRITICAL": 0,
+      "HIGH": 0,
+      "MEDIUM": 1,
+      "LOW": 3
+    },
+    "one_liner": "Minor issues only",
+    "executive_summary": "Minor code quality issues detected, but no evidence of data fabrication or manipulation.",
+    "top_issues": [],
+    "full_report_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/tournament/corpus_scanner/scans/apep_0153_scan.json"
+  },
+  "error": null
+}
