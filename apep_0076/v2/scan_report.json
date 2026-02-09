@@ -127,10 +127,10 @@
           120,
           170
         ],
-        "github_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/apep_0181/code/00_download_data.R#L120-L170"
+        "github_url": "/apep_0181/code/00_download_data.R#L120-L170"
       }
     ],
-    "full_report_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/tournament/corpus_scanner/scans/apep_0181_scan.json"
+    "full_report_url": "/tournament/corpus_scanner/scans/apep_0181_scan.json"
   },
   "error": null
 }

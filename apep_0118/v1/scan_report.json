@@ -118,7 +118,7 @@
     "one_liner": "Minor issues only",
     "executive_summary": "Minor code quality issues detected, but no evidence of data fabrication or manipulation.",
     "top_issues": [],
-    "full_report_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/tournament/corpus_scanner/scans/apep_0118_scan.json"
+    "full_report_url": "/tournament/corpus_scanner/scans/apep_0118_scan.json"
   },
   "error": null
 }

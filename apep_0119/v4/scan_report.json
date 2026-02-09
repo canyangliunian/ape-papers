@@ -142,7 +142,7 @@
           1,
           40
         ],
-        "github_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/apep_0144/code/01e_fetch_dsm.R#L1-L220"
+        "github_url": "/apep_0144/code/01e_fetch_dsm.R#L1-L220"
       },
       {
         "category": "METHODOLOGY_MISMATCH",
@@ -153,10 +153,10 @@
           120,
           170
         ],
-        "github_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/apep_0144/code/04b_sdid_robustness.R#L120-L250"
+        "github_url": "/apep_0144/code/04b_sdid_robustness.R#L120-L250"
       }
     ],
-    "full_report_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/tournament/corpus_scanner/scans/apep_0144_scan.json"
+    "full_report_url": "/tournament/corpus_scanner/scans/apep_0144_scan.json"
   },
   "error": null
 }

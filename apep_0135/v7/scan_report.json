@@ -175,7 +175,7 @@
           78,
           108
         ],
-        "github_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/apep_0151/code/00_fetch_data.R#L78-L156"
+        "github_url": "/apep_0151/code/00_fetch_data.R#L78-L156"
       },
       {
         "category": "DATA_PROVENANCE_MISSING",
@@ -186,7 +186,7 @@
           43,
           49
         ],
-        "github_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/apep_0151/code/01_clean_data.R#L43-L49"
+        "github_url": "/apep_0151/code/01_clean_data.R#L43-L49"
       },
       {
         "category": "METHODOLOGY_MISMATCH",
@@ -197,10 +197,10 @@
           120,
           122
         ],
-        "github_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/apep_0151/code/paper.tex#L120-L122"
+        "github_url": "/apep_0151/code/paper.tex#L120-L122"
       }
     ],
-    "full_report_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/tournament/corpus_scanner/scans/apep_0151_scan.json"
+    "full_report_url": "/tournament/corpus_scanner/scans/apep_0151_scan.json"
   },
   "error": null
 }

@@ -109,10 +109,10 @@
           220,
           279
         ],
-        "github_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/apep_0161/code/01b_fetch_wonder_data.R#L220-L279"
+        "github_url": "/apep_0161/code/01b_fetch_wonder_data.R#L220-L279"
       }
     ],
-    "full_report_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/tournament/corpus_scanner/scans/apep_0161_scan.json"
+    "full_report_url": "/tournament/corpus_scanner/scans/apep_0161_scan.json"
   },
   "error": null
 }

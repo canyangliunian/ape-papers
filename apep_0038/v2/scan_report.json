@@ -145,7 +145,7 @@
           1,
           60
         ],
-        "github_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/apep_0094/code/01b_create_cached_qcew.R#L1-L133"
+        "github_url": "/apep_0094/code/01b_create_cached_qcew.R#L1-L133"
       },
       {
         "category": "DATA_PROVENANCE_MISSING",
@@ -156,10 +156,10 @@
           17,
           23
         ],
-        "github_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/apep_0094/code/03_clean_data.R#L17-L35"
+        "github_url": "/apep_0094/code/03_clean_data.R#L17-L35"
       }
     ],
-    "full_report_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/tournament/corpus_scanner/scans/apep_0094_scan.json"
+    "full_report_url": "/tournament/corpus_scanner/scans/apep_0094_scan.json"
   },
   "error": null
 }

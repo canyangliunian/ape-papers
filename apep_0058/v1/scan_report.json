@@ -109,10 +109,10 @@
           10,
           14
         ],
-        "github_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/apep_0058/code/02_process_nohss.R#L10-L14"
+        "github_url": "/apep_0058/code/02_process_nohss.R#L10-L14"
       }
     ],
-    "full_report_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/tournament/corpus_scanner/scans/apep_0058_scan.json"
+    "full_report_url": "/tournament/corpus_scanner/scans/apep_0058_scan.json"
   },
   "error": null
 }

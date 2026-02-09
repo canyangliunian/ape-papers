@@ -156,7 +156,7 @@
           82,
           83
         ],
-        "github_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/apep_0158/code/07_tables.R#L82-L111"
+        "github_url": "/apep_0158/code/07_tables.R#L82-L111"
       },
       {
         "category": "METHODOLOGY_MISMATCH",
@@ -167,10 +167,10 @@
           132,
           133
         ],
-        "github_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/apep_0158/code/01_fetch_data.R#L132-L157"
+        "github_url": "/apep_0158/code/01_fetch_data.R#L132-L157"
       }
     ],
-    "full_report_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/tournament/corpus_scanner/scans/apep_0158_scan.json"
+    "full_report_url": "/tournament/corpus_scanner/scans/apep_0158_scan.json"
   },
   "error": null
 }

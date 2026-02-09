@@ -90,10 +90,10 @@
           38,
           55
         ],
-        "github_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/apep_0156/code/02_clean_data.R#L38-L55"
+        "github_url": "/apep_0156/code/02_clean_data.R#L38-L55"
       }
     ],
-    "full_report_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/tournament/corpus_scanner/scans/apep_0156_scan.json"
+    "full_report_url": "/tournament/corpus_scanner/scans/apep_0156_scan.json"
   },
   "error": null
 }

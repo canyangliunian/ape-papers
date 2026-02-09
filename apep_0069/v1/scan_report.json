@@ -190,7 +190,7 @@
           23,
           24
         ],
-        "github_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/apep_0069/code/04_robustness.R#L23-L25"
+        "github_url": "/apep_0069/code/04_robustness.R#L23-L25"
       },
       {
         "category": "METHODOLOGY_MISMATCH",
@@ -201,10 +201,10 @@
           704,
           705
         ],
-        "github_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/apep_0069/code/07_expanded_analysis.R#L704-L715"
+        "github_url": "/apep_0069/code/07_expanded_analysis.R#L704-L715"
       }
     ],
-    "full_report_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/tournament/corpus_scanner/scans/apep_0069_scan.json"
+    "full_report_url": "/tournament/corpus_scanner/scans/apep_0069_scan.json"
   },
   "error": null
 }

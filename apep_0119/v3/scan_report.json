@@ -137,7 +137,7 @@
           1,
           35
         ],
-        "github_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/apep_0142/code/01e_fetch_dsm.R#L1-L55"
+        "github_url": "/apep_0142/code/01e_fetch_dsm.R#L1-L55"
       },
       {
         "category": "HARD_CODED_RESULTS",
@@ -148,10 +148,10 @@
           55,
           80
         ],
-        "github_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/apep_0142/code/01e_fetch_dsm.R#L55-L140"
+        "github_url": "/apep_0142/code/01e_fetch_dsm.R#L55-L140"
       }
     ],
-    "full_report_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/tournament/corpus_scanner/scans/apep_0142_scan.json"
+    "full_report_url": "/tournament/corpus_scanner/scans/apep_0142_scan.json"
   },
   "error": null
 }

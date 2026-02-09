@@ -117,7 +117,7 @@
           32,
           63
         ],
-        "github_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/apep_0137/code/05_tables.R#L32-L251"
+        "github_url": "/apep_0137/code/05_tables.R#L32-L251"
       },
       {
         "category": "SELECTIVE_REPORTING",
@@ -128,10 +128,10 @@
           134,
           166
         ],
-        "github_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/apep_0137/code/03_robustness.R#L134-L185"
+        "github_url": "/apep_0137/code/03_robustness.R#L134-L185"
       }
     ],
-    "full_report_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/tournament/corpus_scanner/scans/apep_0137_scan.json"
+    "full_report_url": "/tournament/corpus_scanner/scans/apep_0137_scan.json"
   },
   "error": null
 }

@@ -119,7 +119,7 @@
           12,
           31
         ],
-        "github_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/apep_0149/code/01_fetch_data.R#L12-L68"
+        "github_url": "/apep_0149/code/01_fetch_data.R#L12-L68"
       },
       {
         "category": "SUSPICIOUS_TRANSFORMS",
@@ -130,7 +130,7 @@
           67,
           88
         ],
-        "github_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/apep_0149/code/02_clean_data.R#L67-L97"
+        "github_url": "/apep_0149/code/02_clean_data.R#L67-L97"
       },
       {
         "category": "METHODOLOGY_MISMATCH",
@@ -141,10 +141,10 @@
           63,
           69
         ],
-        "github_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/apep_0149/code/03_main_analysis.R#L63-L85"
+        "github_url": "/apep_0149/code/03_main_analysis.R#L63-L85"
       }
     ],
-    "full_report_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/tournament/corpus_scanner/scans/apep_0149_scan.json"
+    "full_report_url": "/tournament/corpus_scanner/scans/apep_0149_scan.json"
   },
   "error": null
 }

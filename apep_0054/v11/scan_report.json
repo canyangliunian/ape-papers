@@ -184,7 +184,7 @@
           1,
           180
         ],
-        "github_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/apep_0172/code/01_fetch_data.R#L1-L180"
+        "github_url": "/apep_0172/code/01_fetch_data.R#L1-L180"
       },
       {
         "category": "METHODOLOGY_MISMATCH",
@@ -195,10 +195,10 @@
           1,
           120
         ],
-        "github_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/apep_0172/code/03b_ddd_analysis.R#L1-L120"
+        "github_url": "/apep_0172/code/03b_ddd_analysis.R#L1-L120"
       }
     ],
-    "full_report_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/tournament/corpus_scanner/scans/apep_0172_scan.json"
+    "full_report_url": "/tournament/corpus_scanner/scans/apep_0172_scan.json"
   },
   "error": null
 }

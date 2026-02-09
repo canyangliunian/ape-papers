@@ -131,10 +131,10 @@
         "lines": [
           12
         ],
-        "github_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/apep_0062/code/03_clean_data.R#L12"
+        "github_url": "/apep_0062/code/03_clean_data.R#L12"
       }
     ],
-    "full_report_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/tournament/corpus_scanner/scans/apep_0062_scan.json"
+    "full_report_url": "/tournament/corpus_scanner/scans/apep_0062_scan.json"
   },
   "error": null
 }

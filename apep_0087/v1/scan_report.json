@@ -177,10 +177,10 @@
           1,
           50
         ],
-        "github_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/apep_0087/code/repository (multiple files)#L1-L50"
+        "github_url": "/apep_0087/code/repository (multiple files)#L1-L50"
       }
     ],
-    "full_report_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/tournament/corpus_scanner/scans/apep_0087_scan.json"
+    "full_report_url": "/tournament/corpus_scanner/scans/apep_0087_scan.json"
   },
   "error": null
 }

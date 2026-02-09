@@ -125,7 +125,7 @@
           209,
           217
         ],
-        "github_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/apep_0057/code/06_figures_nosf.R#L209-L217"
+        "github_url": "/apep_0057/code/06_figures_nosf.R#L209-L217"
       },
       {
         "category": "DATA_PROVENANCE_MISSING",
@@ -136,10 +136,10 @@
           9,
           25
         ],
-        "github_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/apep_0057/code/05_main_analysis.R#L9-L33"
+        "github_url": "/apep_0057/code/05_main_analysis.R#L9-L33"
       }
     ],
-    "full_report_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/tournament/corpus_scanner/scans/apep_0057_scan.json"
+    "full_report_url": "/tournament/corpus_scanner/scans/apep_0057_scan.json"
   },
   "error": null
 }

@@ -152,10 +152,10 @@
           1,
           4
         ],
-        "github_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/apep_0167/code/01_fetch_data.R#L1-L120"
+        "github_url": "/apep_0167/code/01_fetch_data.R#L1-L120"
       }
     ],
-    "full_report_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/tournament/corpus_scanner/scans/apep_0167_scan.json"
+    "full_report_url": "/tournament/corpus_scanner/scans/apep_0167_scan.json"
   },
   "error": null
 }

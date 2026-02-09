@@ -149,7 +149,7 @@
           27,
           29
         ],
-        "github_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/apep_0047/code/01d_fetch_cps.R#L27-L138"
+        "github_url": "/apep_0047/code/01d_fetch_cps.R#L27-L138"
       },
       {
         "category": "DATA_FABRICATION",
@@ -160,7 +160,7 @@
           101,
           112
         ],
-        "github_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/apep_0047/code/01d_fetch_cps.R#L101-L112"
+        "github_url": "/apep_0047/code/01d_fetch_cps.R#L101-L112"
       },
       {
         "category": "DATA_PROVENANCE_MISSING",
@@ -171,10 +171,10 @@
           16,
           17
         ],
-        "github_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/apep_0047/code/02_main_analysis.R#L16-L17"
+        "github_url": "/apep_0047/code/02_main_analysis.R#L16-L17"
       }
     ],
-    "full_report_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/tournament/corpus_scanner/scans/apep_0047_scan.json"
+    "full_report_url": "/tournament/corpus_scanner/scans/apep_0047_scan.json"
   },
   "error": null
 }

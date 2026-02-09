@@ -116,10 +116,10 @@
           34,
           35
         ],
-        "github_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/apep_0170/code/04_robustness.R#L34-L39"
+        "github_url": "/apep_0170/code/04_robustness.R#L34-L39"
       }
     ],
-    "full_report_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/tournament/corpus_scanner/scans/apep_0170_scan.json"
+    "full_report_url": "/tournament/corpus_scanner/scans/apep_0170_scan.json"
   },
   "error": null
 }

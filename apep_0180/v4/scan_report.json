@@ -147,10 +147,10 @@
           105,
           106
         ],
-        "github_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/apep_0192/code/04_robustness.R#L105-L107"
+        "github_url": "/apep_0192/code/04_robustness.R#L105-L107"
       }
     ],
-    "full_report_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/tournament/corpus_scanner/scans/apep_0192_scan.json"
+    "full_report_url": "/tournament/corpus_scanner/scans/apep_0192_scan.json"
   },
   "error": null
 }

@@ -178,7 +178,7 @@
           1,
           20
         ],
-        "github_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/apep_0177/code/08_gender_analysis.R#L1-L193"
+        "github_url": "/apep_0177/code/08_gender_analysis.R#L1-L193"
       },
       {
         "category": "METHODOLOGY_MISMATCH",
@@ -189,7 +189,7 @@
           1,
           12
         ],
-        "github_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/apep_0177/code/07_state_analysis.R#L1-L216"
+        "github_url": "/apep_0177/code/07_state_analysis.R#L1-L216"
       },
       {
         "category": "DATA_PROVENANCE_MISSING",
@@ -199,10 +199,10 @@
         "lines": [
           10
         ],
-        "github_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/apep_0177/code/08_gender_analysis.R#L10"
+        "github_url": "/apep_0177/code/08_gender_analysis.R#L10"
       }
     ],
-    "full_report_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/tournament/corpus_scanner/scans/apep_0177_scan.json"
+    "full_report_url": "/tournament/corpus_scanner/scans/apep_0177_scan.json"
   },
   "error": null
 }

@@ -122,10 +122,10 @@
           105,
           123
         ],
-        "github_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/apep_0141/code/01_clean_data.R#L105-L123"
+        "github_url": "/apep_0141/code/01_clean_data.R#L105-L123"
       }
     ],
-    "full_report_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/tournament/corpus_scanner/scans/apep_0141_scan.json"
+    "full_report_url": "/tournament/corpus_scanner/scans/apep_0141_scan.json"
   },
   "error": null
 }

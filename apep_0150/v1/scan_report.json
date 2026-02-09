@@ -112,10 +112,10 @@
           29,
           75
         ],
-        "github_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/apep_0150/code/01_fetch_data.R#L29-L75"
+        "github_url": "/apep_0150/code/01_fetch_data.R#L29-L75"
       }
     ],
-    "full_report_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/tournament/corpus_scanner/scans/apep_0150_scan.json"
+    "full_report_url": "/tournament/corpus_scanner/scans/apep_0150_scan.json"
   },
   "error": null
 }

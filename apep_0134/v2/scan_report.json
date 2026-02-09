@@ -148,7 +148,7 @@
           143,
           201
         ],
-        "github_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/apep_0136/code/05_figures.R#L143-L322"
+        "github_url": "/apep_0136/code/05_figures.R#L143-L322"
       },
       {
         "category": "SELECTIVE_REPORTING",
@@ -159,10 +159,10 @@
           1,
           7
         ],
-        "github_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/apep_0136/code/05_figures.R#L1-L126"
+        "github_url": "/apep_0136/code/05_figures.R#L1-L126"
       }
     ],
-    "full_report_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/tournament/corpus_scanner/scans/apep_0136_scan.json"
+    "full_report_url": "/tournament/corpus_scanner/scans/apep_0136_scan.json"
   },
   "error": null
 }

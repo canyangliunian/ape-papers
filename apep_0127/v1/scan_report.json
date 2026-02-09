@@ -154,7 +154,7 @@
           86,
           113
         ],
-        "github_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/apep_0127/code/03b_main_analysis_car_housing.R#L86-L113"
+        "github_url": "/apep_0127/code/03b_main_analysis_car_housing.R#L86-L113"
       },
       {
         "category": "METHODOLOGY_MISMATCH",
@@ -165,7 +165,7 @@
           250,
           360
         ],
-        "github_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/apep_0127/code/paper.tex#L250-L360"
+        "github_url": "/apep_0127/code/paper.tex#L250-L360"
       },
       {
         "category": "DATA_PROVENANCE_MISSING",
@@ -176,10 +176,10 @@
           214,
           260
         ],
-        "github_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/apep_0127/code/02_clean_data.R#L214-L260"
+        "github_url": "/apep_0127/code/02_clean_data.R#L214-L260"
       }
     ],
-    "full_report_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/tournament/corpus_scanner/scans/apep_0127_scan.json"
+    "full_report_url": "/tournament/corpus_scanner/scans/apep_0127_scan.json"
   },
   "error": null
 }

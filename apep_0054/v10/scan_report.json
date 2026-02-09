@@ -195,7 +195,7 @@
           1,
           210
         ],
-        "github_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/apep_0171/code/01_fetch_data.R#L1-L210"
+        "github_url": "/apep_0171/code/01_fetch_data.R#L1-L210"
       },
       {
         "category": "METHODOLOGY_MISMATCH",
@@ -206,7 +206,7 @@
           1,
           230
         ],
-        "github_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/apep_0171/code/03b_ddd_analysis.R#L1-L230"
+        "github_url": "/apep_0171/code/03b_ddd_analysis.R#L1-L230"
       },
       {
         "category": "HARD_CODED_RESULTS",
@@ -217,10 +217,10 @@
           20,
           60
         ],
-        "github_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/apep_0171/code/04e_power_analysis.R#L20-L60"
+        "github_url": "/apep_0171/code/04e_power_analysis.R#L20-L60"
       }
     ],
-    "full_report_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/tournament/corpus_scanner/scans/apep_0171_scan.json"
+    "full_report_url": "/tournament/corpus_scanner/scans/apep_0171_scan.json"
   },
   "error": null
 }

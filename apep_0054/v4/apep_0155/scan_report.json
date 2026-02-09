@@ -196,10 +196,10 @@
           214,
           215
         ],
-        "github_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/apep_0155/code/paper.tex#L214-L217"
+        "github_url": "/apep_0155/code/paper.tex#L214-L217"
       }
     ],
-    "full_report_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/tournament/corpus_scanner/scans/apep_0155_scan.json"
+    "full_report_url": "/tournament/corpus_scanner/scans/apep_0155_scan.json"
   },
   "error": null
 }

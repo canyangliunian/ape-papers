@@ -116,7 +116,7 @@
           140,
           154
         ],
-        "github_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/apep_0191/code/02_clean_data.R#L140-L206"
+        "github_url": "/apep_0191/code/02_clean_data.R#L140-L206"
       },
       {
         "category": "SUSPICIOUS_TRANSFORMS",
@@ -127,10 +127,10 @@
           33,
           41
         ],
-        "github_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/apep_0191/code/02b_add_pop_weights.R#L33-L78"
+        "github_url": "/apep_0191/code/02b_add_pop_weights.R#L33-L78"
       }
     ],
-    "full_report_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/tournament/corpus_scanner/scans/apep_0191_scan.json"
+    "full_report_url": "/tournament/corpus_scanner/scans/apep_0191_scan.json"
   },
   "error": null
 }

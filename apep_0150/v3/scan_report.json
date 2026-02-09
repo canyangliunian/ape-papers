@@ -116,10 +116,10 @@
           209,
           338
         ],
-        "github_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/apep_0157/code/01_fetch_data.R#L209-L338"
+        "github_url": "/apep_0157/code/01_fetch_data.R#L209-L338"
       }
     ],
-    "full_report_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/tournament/corpus_scanner/scans/apep_0157_scan.json"
+    "full_report_url": "/tournament/corpus_scanner/scans/apep_0157_scan.json"
   },
   "error": null
 }

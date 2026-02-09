@@ -128,10 +128,10 @@
           35,
           48
         ],
-        "github_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/apep_0071/code/09_fix_rdd_sample.R#L35-L48"
+        "github_url": "/apep_0071/code/09_fix_rdd_sample.R#L35-L48"
       }
     ],
-    "full_report_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/tournament/corpus_scanner/scans/apep_0071_scan.json"
+    "full_report_url": "/tournament/corpus_scanner/scans/apep_0071_scan.json"
   },
   "error": null
 }

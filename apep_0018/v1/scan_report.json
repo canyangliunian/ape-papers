@@ -97,7 +97,7 @@
           63,
           88
         ],
-        "github_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/apep_0018/code/fetch_data.py#L63-L125"
+        "github_url": "/apep_0018/code/fetch_data.py#L63-L125"
       },
       {
         "category": "METHODOLOGY_MISMATCH",
@@ -108,7 +108,7 @@
           222,
           223
         ],
-        "github_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/apep_0018/code/analyze_rdd.py#L222-L352"
+        "github_url": "/apep_0018/code/analyze_rdd.py#L222-L352"
       },
       {
         "category": "HARD_CODED_RESULTS",
@@ -118,10 +118,10 @@
         "lines": [
           1
         ],
-        "github_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/apep_0018/code/paper.tex#L1"
+        "github_url": "/apep_0018/code/paper.tex#L1"
       }
     ],
-    "full_report_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/tournament/corpus_scanner/scans/apep_0018_scan.json"
+    "full_report_url": "/tournament/corpus_scanner/scans/apep_0018_scan.json"
   },
   "error": null
 }

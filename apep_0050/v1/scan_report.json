@@ -161,10 +161,10 @@
           156,
           170
         ],
-        "github_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/apep_0050/code/04_robustness.R#L156-L170"
+        "github_url": "/apep_0050/code/04_robustness.R#L156-L170"
       }
     ],
-    "full_report_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/tournament/corpus_scanner/scans/apep_0050_scan.json"
+    "full_report_url": "/tournament/corpus_scanner/scans/apep_0050_scan.json"
   },
   "error": null
 }

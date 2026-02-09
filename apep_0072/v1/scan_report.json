@@ -119,7 +119,7 @@
           29,
           45
         ],
-        "github_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/apep_0072/code/01_policy_data.R#L29-L45"
+        "github_url": "/apep_0072/code/01_policy_data.R#L29-L45"
       },
       {
         "category": "HARD_CODED_RESULTS",
@@ -130,10 +130,10 @@
           132,
           146
         ],
-        "github_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/apep_0072/code/04_figures.R#L132-L146"
+        "github_url": "/apep_0072/code/04_figures.R#L132-L146"
       }
     ],
-    "full_report_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/tournament/corpus_scanner/scans/apep_0072_scan.json"
+    "full_report_url": "/tournament/corpus_scanner/scans/apep_0072_scan.json"
   },
   "error": null
 }

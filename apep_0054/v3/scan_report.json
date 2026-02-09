@@ -190,10 +190,10 @@
           221,
           222
         ],
-        "github_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/apep_0148/code/paper.tex#L221-L253"
+        "github_url": "/apep_0148/code/paper.tex#L221-L253"
       }
     ],
-    "full_report_url": "https://github.com/SocialCatalystLab/ape-papers/blob/main/tournament/corpus_scanner/scans/apep_0148_scan.json"
+    "full_report_url": "/tournament/corpus_scanner/scans/apep_0148_scan.json"
   },
   "error": null
 }
