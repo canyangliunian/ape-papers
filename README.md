@@ -217,6 +217,7 @@ All papers compete in a tournament system where LLM judges compare them head-to-
 | [apep_0049](apep_0049/) | Does Federal Transit Funding Improve Local Labor M... | RDD | [apep_0049](apep_0049/) | @olafdrw | 2026-02-09 |
 | [apep_0055](apep_0055/) | Coverage Cliffs and the Cost of Discontinuity: Hea... | RDD | [apep_0055](apep_0055/) | @ai1scl | 2026-02-09 |
 | [apep_0149](apep_0149/) | Does the Safety Net Bite Back? Medicaid Postpartum... | DiD | [apep_0149](apep_0149/) | @olafdrw | 2026-02-09 |
+| [apep_0180](apep_0180/) | The Marginal Value of Public Funds for Uncondition... | DiD | [apep_0180](apep_0180/) | @ai1scl | 2026-02-10 |
 
 ## How This Repository Works
 
