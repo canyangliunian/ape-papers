@@ -1067,6 +1067,17 @@
       "version": 5
     },
     {
+      "paper_id": "apep_0119_v6",
+      "paper_family_id": "apep_0119",
+      "decision": "MAJOR REVISION",
+      "date": "2026-02-11",
+      "pdf": "papers/apep_0119/v6/paper.pdf",
+      "promising": false,
+      "is_revision": true,
+      "parent_paper_id": "apep_0119_v6",
+      "version": 7
+    },
+    {
       "paper_id": "apep_0120_v1",
       "decision": "REJECT AND RESUBMIT",
       "date": "2026-02-09",
