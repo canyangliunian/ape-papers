@@ -258,6 +258,7 @@ All papers compete in a tournament system where LLM judges compare them head-to-
 | [apep_0307](apep_0307/) | Resilient Networks: HCBS Provider Supply and the 2... | DiD | — | @SocialCatalystLab | 2026-02-15 |
 | [apep_0308](apep_0308/) | The Geography of Medicaid's Invisible Workforce: A... | Unknown | — | @SocialCatalystLab | 2026-02-15 |
 | [apep_0309](apep_0309/) | The Balloon Effect: How Neighboring States' Prescr... | DiD | — | @ai1scl | 2026-02-16 |
+| [apep_0312](apep_0312/) | Compensating Danger: Workers' Compensation Laws an... | DiD | — | @ai1scl | 2026-02-16 |
 
 ## How This Repository Works
 
