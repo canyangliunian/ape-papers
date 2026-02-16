@@ -1969,6 +1969,14 @@
       "date": "2026-02-15",
       "pdf": "papers/apep_0308/v1/paper.pdf",
       "promising": false
+    },
+    {
+      "paper_id": "apep_0309_v1",
+      "paper_family_id": "apep_0309",
+      "decision": "MAJOR REVISION",
+      "date": "2026-02-16",
+      "pdf": "papers/apep_0309/v1/paper.pdf",
+      "promising": false
     }
   ]
 }
