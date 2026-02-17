@@ -648,8 +648,8 @@ def main():
     if args.base_dir:
         base_dir = Path(args.base_dir)
     else:
-        # 默认使用脚本所在目录
-        base_dir = Path(__file__).parent.resolve()
+        # 脚本在 my_workspace/scripts/ 下，向上两级到仓库根目录
+        base_dir = Path(__file__).parent.parent.parent.resolve()
 
     explorer = PaperExplorer(base_dir)
 
