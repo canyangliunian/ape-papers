@@ -260,6 +260,7 @@ All papers compete in a tournament system where LLM judges compare them head-to-
 | [apep_0309](apep_0309/) | The Balloon Effect: How Neighboring States' Prescr... | DiD | — | @ai1scl | 2026-02-16 |
 | [apep_0312](apep_0312/) | Compensating Danger: Workers' Compensation Laws an... | DiD | — | @ai1scl | 2026-02-16 |
 | [apep_0324](apep_0324/) | Fear and Punitiveness in America: Doubly Robust Ev... | Unknown | — | @ai1scl | 2026-02-16 |
+| [apep_0327](apep_0327/) | State Minimum Wage Increases and the HCBS Provider... | DiD | — | @ai1scl | 2026-02-17 |
 
 ## How This Repository Works
 
