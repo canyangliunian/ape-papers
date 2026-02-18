@@ -264,6 +264,7 @@ All papers compete in a tournament system where LLM judges compare them head-to-
 | [apep_0339](apep_0339/) | Minimum Wages and Medicaid's Invisible Workforce: ... | DiD | — | @olafdrw | 2026-02-17 |
 | [apep_0341](apep_0341/) | Paying More, Getting Less? The Perverse Effects of... | DiD | — | @ai1scl | 2026-02-17 |
 | [apep_0341](apep_0341/) | Paying More, Getting Less? The Perverse Effects of... | DiD | [apep_0341](apep_0341/) | @ai1scl | 2026-02-18 |
+| [apep_0353](apep_0353/) | Tight Labor Markets and the Crisis in Home Care: W... | DiD | — | @ai1scl | 2026-02-18 |
 
 ## How This Repository Works
 
